@@ -3,6 +3,7 @@ import { PageId } from './types';
 import { IntroAnimation } from './components/IntroAnimation';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { CooperationNoticeBanner } from './components/CooperationNoticeBanner';
 
 // Pages
 import { HomePage } from './pages/HomePage';
@@ -39,6 +40,9 @@ export default function App() {
     <div className="min-h-screen bg-[#0b0f17] text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-white">
       {/* Opening Animation / Intro Screen (Section 2) */}
       {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
+
+      {/* Continuous Update Notice Banner */}
+      <CooperationNoticeBanner />
 
       {/* Persistent Sticky Navbar (Section 3) */}
       <Navbar currentPage={currentPage} onNavigate={(page) => handleNavigate(page)} />

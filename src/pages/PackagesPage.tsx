@@ -15,6 +15,7 @@ import {
   Zap,
   Info
 } from 'lucide-react';
+import { AiToolsAndAppOffer } from '../components/AiToolsAndAppOffer';
 
 interface PackagesPageProps {
   onNavigate: (page: PageId, selectedPkg?: string) => void;
@@ -183,6 +184,11 @@ export const PackagesPage: React.FC<PackagesPageProps> = ({ onNavigate }) => {
           );
         })}
       </div>
+
+      {/* ========================================================================= */}
+      {/* AI TOOLS, APP DEVELOPMENT & DOMAIN SERVICES SPECIAL OFFER */}
+      {/* ========================================================================= */}
+      <AiToolsAndAppOffer onOrderClick={() => onNavigate('requirements')} />
 
       {/* ========================================================================= */}
       {/* 7. DOMAIN SECTION (Section 7) */}

@@ -587,7 +587,7 @@ export const RequirementsPage: React.FC<RequirementsPageProps> = ({
             />
           </div>
           <p className="text-[11px] text-slate-400">
-            Enter a valid coupon code and you may receive a discount from PKR 999 up to PKR 2,999.
+            Enter a valid coupon code and you may receive a discount from PKR 499 up to PKR 2,999.
           </p>
         </div>
 

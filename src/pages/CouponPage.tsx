@@ -42,7 +42,7 @@ export const CouponPage: React.FC<CouponPageProps> = ({ onNavigate }) => {
           </h2>
           {/* Exact required explanation from Section 19 */}
           <p className="text-slate-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-            “Depending on the active offer, a valid coupon may provide a discount of PKR 1,000 up to PKR 3,000 or, during selected promotional campaigns, potentially higher discounts.”
+            “Depending on the active offer, a valid coupon may provide a discount of PKR 499 up to PKR 2,999 or, during selected promotional campaigns, potentially higher discounts.”
           </p>
         </div>
 

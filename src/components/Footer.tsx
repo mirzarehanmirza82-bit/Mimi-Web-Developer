@@ -185,6 +185,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <button
+                  onClick={() => handleNav('packages')}
+                  className="hover:text-cyan-400 transition-colors text-left flex items-center gap-1.5 text-cyan-400/90"
+                >
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>AI Tools &amp; App Offer</span>
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleNav('privacy')}
                   className="hover:text-cyan-400 transition-colors text-left"
                 >

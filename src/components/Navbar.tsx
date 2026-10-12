@@ -13,7 +13,8 @@ import {
   Rocket,
   ArrowRight,
   ExternalLink,
-  MessageCircle
+  MessageCircle,
+  Sparkles
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -72,10 +73,18 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
     {
       id: 'coupon',
       label: 'Today’s Coupon',
-      description: 'Check active discount codes up to PKR 3,000',
+      description: 'Check active discount codes from PKR 499 to PKR 2,999',
       icon: <Tag className="w-4 h-4 text-amber-400" />,
       colorClass: 'text-amber-400 hover:bg-amber-950/30',
       badgeText: 'Offer'
+    },
+    {
+      id: 'packages',
+      label: 'AI Tools & App Offer',
+      description: 'Convert custom AI tools into web and mobile apps',
+      icon: <Sparkles className="w-4 h-4 text-cyan-400" />,
+      colorClass: 'text-cyan-400 hover:bg-cyan-950/30',
+      badgeText: 'New'
     },
     {
       id: 'community',
