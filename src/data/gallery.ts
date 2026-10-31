@@ -17,7 +17,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'Food & Beverage',
     description: 'An appetizing culinary website featuring interactive digital menu cards, table reservations, location directions, and instant WhatsApp ordering for takeaways.',
     features: ['Digital Food Menu', 'WhatsApp Takeaway Order', 'Google Map Location', 'Reservation Form'],
-    image: imgRestaurant
+    image: imgRestaurant,
+    demoUrl: 'https://wok-on-wheels-1.vercel.app/'
   },
   {
     id: 'doctor',
@@ -35,7 +36,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'Beverage & Cafe',
     description: 'A vibrant, modern website for a fresh juice, smoothie, and bubble tea spot with mouth-watering flavor showcases and direct delivery contact.',
     features: ['Flavor Showcase', 'Seasonal Specials', 'WhatsApp Quick Order', 'Social Media Feeds'],
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
+    demoUrl: 'https://bonbite-omega.vercel.app/'
   },
   {
     id: 'salon',
@@ -71,7 +73,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'Interior & Decor',
     description: 'A rich showroom catalog website highlighting handcrafted wood furniture, living room sets, custom dimensions, and quotation requests.',
     features: ['Product Showcase', 'Custom Sizing Inquiries', 'Interior Lookbooks', 'Catalog Download'],
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80',
+    demoUrl: 'https://kf-furniture-house.vercel.app/'
   },
   {
     id: 'mobile-shop',
@@ -89,7 +92,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'Online Shopping',
     description: 'A slick multi-product e-commerce front featuring product categories, image zoom, customer reviews, and order-via-WhatsApp checkout.',
     features: ['Collection Grid', 'Size Guide Modal', 'WhatsApp Checkout', 'Customer Reviews'],
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
+    demoUrl: 'https://subhan-allah-store.vercel.app/'
   },
   {
     id: 'portfolio',
@@ -98,7 +102,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'Creative Portfolio',
     description: 'A minimalist portfolio website showcasing architectural case studies, project photographs, awards, and direct client consultation contact.',
     features: ['Case Study Slider', 'High-Res Galleries', 'Client Testimonials', 'Direct Inquiry Form'],
-    image: imgWebDev
+    image: imgWebDev,
+    demoUrl: 'https://meme-coin-elite.vercel.app/'
   },
   {
     id: 'service',
@@ -107,7 +112,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'On-Demand Service',
     description: 'A conversion-engineered website for home maintenance, HVAC, electrical, and plumbing contractors with same-day booking requests.',
     features: ['Emergency Service Callout', 'Pricing Estimates', 'Service Area Coverage', 'WhatsApp Dispatch'],
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
+    demoUrl: 'https://mimi-web-employee-xi.vercel.app/'
   },
   {
     id: 'corporate',
@@ -116,7 +122,8 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
     badge: 'B2B Enterprise',
     description: 'An authoritative corporate presence for financial, management, or legal advisory firms with team directory and client engagement forms.',
     features: ['Practice Area Overviews', 'Partner Directory', 'Industry Insights', 'Consultation Scheduler'],
-    image: imgBusinessWeb
+    image: imgBusinessWeb,
+    demoUrl: 'https://mimi-web-developer.vercel.app/'
   }
 ];
 

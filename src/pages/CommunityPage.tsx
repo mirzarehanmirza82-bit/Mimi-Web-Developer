@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   Briefcase
 } from 'lucide-react';
+import { LiveWebsitesShowcase } from '../components/LiveWebsitesShowcase';
 
 interface CommunityPageProps {
   onNavigate: (page: PageId) => void;
@@ -115,6 +116,13 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({ onNavigate }) => {
           ))}
         </div>
       </div>
+
+      {/* Community Websites Showcase */}
+      <LiveWebsitesShowcase
+        title="Community Showcase — Deployed Client Websites"
+        subtitle="Websites built for our clients and featured in the Mimi Web Developer community directory."
+        showNote={false}
+      />
 
       {/* Realistic Expectations Notice (Section 20 constraint) */}
       <div className="rounded-2xl bg-slate-900/60 border border-slate-800 p-5 text-xs text-slate-400 text-center leading-relaxed max-w-3xl mx-auto">

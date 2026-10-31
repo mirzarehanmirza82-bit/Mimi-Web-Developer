@@ -13,6 +13,7 @@ import {
   Eye,
   Filter
 } from 'lucide-react';
+import { LiveWebsitesShowcase } from '../components/LiveWebsitesShowcase';
 
 interface GalleryPageProps {
   onNavigate: (page: PageId, selectedPkg?: string, businessCategory?: string) => void;
@@ -58,6 +59,11 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onNavigate }) => {
           “These are examples of the types of websites we can create. Your website will be customized according to your business, brand and requirements.”
         </p>
       </div>
+
+      {/* ========================================================================= */}
+      {/* LIVE CLIENT WEBSITES SHOWCASE (7 LIVE LINKS WITH EXACT DOMAIN BUTTONS) */}
+      {/* ========================================================================= */}
+      <LiveWebsitesShowcase />
 
       {/* Category Filter Controls */}
       <div className="flex items-center justify-center flex-wrap gap-2 pt-2">
@@ -160,6 +166,21 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onNavigate }) => {
                 </div>
               </div>
             </div>
+
+            {/* Live Website Link Button if available */}
+            {project.demoUrl && (
+              <div className="px-5 pb-3">
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2 px-3 rounded-xl text-xs font-mono font-medium text-cyan-300 hover:text-white bg-slate-900/90 hover:bg-cyan-950 border border-slate-800 hover:border-cyan-500/60 transition-colors flex items-center justify-between gap-1.5"
+                >
+                  <span className="truncate">{project.demoUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                </a>
+              </div>
+            )}
 
             {/* Bottom Card Actions */}
             <div className="p-5 pt-0 flex items-center gap-2">
@@ -279,6 +300,24 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onNavigate }) => {
                 ))}
               </ul>
             </div>
+
+            {/* Live Website Link in Modal if available */}
+            {selectedProject.demoUrl && (
+              <div className="p-3.5 rounded-xl bg-cyan-950/40 border border-cyan-800/60 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="text-xs text-slate-300">
+                  <span className="font-semibold text-cyan-400">Live Client Website Link:</span>
+                </div>
+                <a
+                  href={selectedProject.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg font-mono text-xs font-semibold text-cyan-300 hover:text-white bg-slate-900 hover:bg-cyan-900 border border-cyan-700/60 transition-colors"
+                >
+                  <span>{selectedProject.demoUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
+                </a>
+              </div>
+            )}
 
             <div className="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center gap-3">
               <button

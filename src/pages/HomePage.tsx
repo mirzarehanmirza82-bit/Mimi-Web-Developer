@@ -23,6 +23,7 @@ import {
 import imgWebDev from '../assets/images/hero_web_development_1790833818545.jpg';
 import imgBusinessWeb from '../assets/images/hero_business_website_1790833832733.jpg';
 import imgResponsiveDevices from '../assets/images/hero_responsive_devices_1790833845528.jpg';
+import { LiveWebsitesShowcase } from '../components/LiveWebsitesShowcase';
 
 interface HomePageProps {
   onNavigate: (page: PageId, selectedPkg?: string) => void;
@@ -439,9 +440,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       </section>
 
       {/* ========================================================================= */}
-      {/* 5. CLIENT WEBSITE COMMUNITY SHOWCASE NOTICE (Section 22) */}
+      {/* 5. CLIENT WEBSITE COMMUNITY SHOWCASE (Section 22 & Live Demos) */}
       {/* ========================================================================= */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <LiveWebsitesShowcase
+          title="Live Client Websites & Active Projects"
+          subtitle="Explore active live websites engineered and deployed by Mimi Web Developer Service across retail, portfolio, agency, dining, and brand niches."
+          showNote={true}
+        />
+
         <div className="rounded-2xl bg-[#0e1422] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-start gap-4">
             <div className="p-3 rounded-xl bg-cyan-950/60 border border-cyan-800/60 text-cyan-400 shrink-0">
@@ -449,7 +456,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
             <div className="space-y-1">
               <h3 className="text-base sm:text-lg font-bold text-white font-['Syne']">
-                Client Website Community Showcase
+                Client Website Community Showcase Policy
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
                 When you order a website from us, your completed website may be displayed inside our website-development community/showcase with a link, where applicable, so visitors can view examples of websites created by us.
